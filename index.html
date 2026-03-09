@@ -55,7 +55,7 @@
 
   .nav-links a {
     font-family: 'Space Mono', monospace;
-    font-size: 0.7rem;
+    font-size: 0.78rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: rgba(255,255,255,0.7);
@@ -329,7 +329,7 @@
 
   .section-heading {
     font-family: 'DM Serif Display', serif;
-    font-size: clamp(2rem, 3.5vw, 3.2rem);
+    font-size: clamp(2.4rem, 4vw, 3.8rem);
     line-height: 1.15;
     color: var(--navy);
     margin-bottom: 24px;
@@ -819,9 +819,8 @@
     <li><a href="#about">About</a></li>
     <li><a href="#priorities">Priorities</a></li>
     <li><a href="#endorse">Get Involved</a></li>
-    <li><a href="#donate">Donate</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#donate" class="nav-cta">Donate Now</a></li>
+    <li><a href="#signup" class="nav-cta">Stay in Touch</a></li>
   </ul>
 </nav>
 
@@ -879,12 +878,12 @@
 <section id="about">
   <div class="section-inner">
     <div class="section-label">About Jessica</div>
-    <h2 class="section-heading">A scientist, a mom,<br>and a <em>proven leader</em></h2>
+    <h2 class="section-heading">Mom. Scientist.<br><em>Education Leader.</em></h2>
 
     <div class="about-grid">
       <div class="about-text">
         <p>
-          I'm Jessica Williams, a <strong>mom of four kids ages 9 to 18</strong>, a scientist, and someone who has spent her entire career making schools work better for students who need it most.
+          I'm Jessica Williams: <strong>mom of four, scientist, and education leader</strong>. I've spent my entire career making schools work better for students who need it most.
         </p>
         <p>
           A <strong>Georgia native</strong>, I earned my B.S. in Biology from <strong>Spelman College</strong> before going on to Princeton University for my Ph.D. in Molecular Biology. I know firsthand the power of exceptional education to transform a life, and I want every child in Henry County to have that same opportunity.
@@ -899,7 +898,7 @@
           Henry County is at an inflection point. We have a <strong>new STEM High School opening in 2027</strong>, a $600 million budget that needs responsible stewardship, and thousands of children who deserve a board member with real expertise fighting for them.
         </p>
         <p>
-          I'm not a career politician. I'm a parent, a scientist, and a problem-solver. I'm <strong>all in for Henry County's kids</strong>.
+          I'm not a career politician. I'm a mom, a scientist, and an education leader. <strong>All in for Henry County's kids.</strong>
         </p>
 
       </div>
@@ -912,8 +911,8 @@
         </div>
         <div class="credential-card">
           <div class="cred-title">Current Role</div>
-          <div class="cred-main">Strategic Advisor, Education Systems</div>
-          <div class="cred-sub">15+ years improving student outcomes across 100+ institutions</div>
+          <div class="cred-main">National Institute for Student Success</div>
+          <div class="cred-sub">Strategic Advisor, improving student outcomes across 100+ institutions</div>
         </div>
         <div class="credential-card">
           <div class="cred-title">Impact</div>
@@ -972,7 +971,7 @@
   </div>
 </section>
 
-<!-- ENDORSE / VOLUNTEER -->
+<!-- GET INVOLVED -->
 <section id="endorse">
   <div class="section-inner">
     <div class="section-label">Get Involved</div>
@@ -985,19 +984,15 @@
       <div class="form-grid">
         <div class="form-group">
           <label>First Name</label>
-          <input type="text" placeholder="Jessica">
+          <input type="text" placeholder="First name">
         </div>
         <div class="form-group">
           <label>Last Name</label>
-          <input type="text" placeholder="Williams">
+          <input type="text" placeholder="Last name">
         </div>
         <div class="form-group">
           <label>Email Address</label>
           <input type="email" placeholder="you@email.com">
-        </div>
-        <div class="form-group">
-          <label>Phone Number</label>
-          <input type="tel" placeholder="(404) 000-0000">
         </div>
         <div class="form-group">
           <label>Neighborhood / Community</label>
@@ -1026,37 +1021,13 @@
         <label class="checkbox-item"><input type="checkbox"> Put up a yard sign</label>
         <label class="checkbox-item"><input type="checkbox"> Help with social media</label>
         <label class="checkbox-item"><input type="checkbox"> Phone banking</label>
-        <label class="checkbox-item"><input type="checkbox"> Make a donation</label>
       </div>
 
-      <button class="btn-submit" onclick="alert('Thank you! The campaign team will be in touch soon.')">Submit →</button>
+      <button class="btn-submit" onclick="alert('Thank you! The campaign team will be in touch soon.')">Submit</button>
     </div>
   </div>
 </section>
 
-<!-- DONATE -->
-<section id="donate">
-  <div class="section-inner">
-    <div class="section-label">Support the Campaign</div>
-    <h2 class="section-heading">Invest in Every Child's Future</h2>
-    <p class="donate-subtext">Your contribution, at any level, helps put Jessica in front of more voters, more doors, and more communities across District 4.</p>
-
-    <div class="donate-amounts">
-      <button class="donate-btn" onclick="setAmount(25)">$25</button>
-      <button class="donate-btn" onclick="setAmount(50)">$50</button>
-      <button class="donate-btn" onclick="setAmount(100)">$100</button>
-      <button class="donate-btn" onclick="setAmount(250)">$250</button>
-      <button class="donate-btn" onclick="setAmount(500)">$500</button>
-    </div>
-
-    <div class="donate-custom">
-      <input type="number" id="donateAmount" placeholder="Other amount" min="1">
-      <button class="donate-submit" onclick="alert('Thank you for your support! Connect this to ActBlue or your payment processor.')">Donate Now →</button>
-    </div>
-
-    <p style="font-family: 'Space Mono', monospace; font-size: 0.6rem; letter-spacing: 0.08em; color: rgba(15,34,64,0.5); text-transform: uppercase;">Paid for by Jessica Williams for Henry County Schools District 4</p>
-  </div>
-</section>
 
 <!-- CONTACT -->
 <section id="contact">
@@ -1072,14 +1043,7 @@
           <div class="icon">✉️</div>
           <div class="detail-text">
             <strong>Email</strong>
-            <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6f2b1d051d18060303060e021c5e2f08020e0603410c0002">[email&#160;protected]</a>
-          </div>
-        </div>
-        <div class="contact-detail">
-          <div class="icon">📞</div>
-          <div class="detail-text">
-            <strong>Phone</strong>
-            (404) 610-0054
+            <a href="mailto:drjessrw@gmail.com" style="color:rgba(255,255,255,0.7);text-decoration:none;">drjessrw@gmail.com</a>
           </div>
         </div>
         <div class="contact-detail">
@@ -1121,6 +1085,21 @@
   </div>
 </section>
 
+<!-- EMAIL SIGNUP -->
+<section id="signup" style="background: var(--navy); padding: 80px 48px; text-align: center;">
+  <div class="section-inner" style="max-width: 600px;">
+    <div class="section-label" style="justify-content: center;">Stay Connected</div>
+    <h2 class="section-heading" style="color: var(--warm-white); margin-bottom: 12px;">Sign up to <em>stay in touch</em></h2>
+    <p style="color: rgba(255,255,255,0.6); font-size: 1rem; line-height: 1.7; margin-bottom: 40px; font-weight: 300;">Get updates from the campaign delivered straight to your inbox.</p>
+    <div style="display: flex; gap: 12px; max-width: 480px; margin: 0 auto; flex-wrap: wrap;">
+      <input type="text" placeholder="Your name" style="flex: 1; min-width: 140px; padding: 14px 18px; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15); color: white; font-family: 'DM Sans', sans-serif; font-size: 0.9rem; border-radius: 2px; outline: none;">
+      <input type="email" placeholder="Your email" style="flex: 2; min-width: 200px; padding: 14px 18px; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15); color: white; font-family: 'DM Sans', sans-serif; font-size: 0.9rem; border-radius: 2px; outline: none;">
+      <button onclick="handleSignup()" style="background: var(--gold); color: var(--navy); padding: 14px 28px; font-family: 'Space Mono', monospace; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; border: none; cursor: pointer; border-radius: 2px; white-space: nowrap;">Sign Up</button>
+    </div>
+    <p style="margin-top: 20px; font-family: 'Space Mono', monospace; font-size: 0.6rem; letter-spacing: 0.08em; color: rgba(255,255,255,0.3); text-transform: uppercase;">drjessrw@gmail.com</p>
+  </div>
+</section>
+
 <!-- FOOTER -->
 <footer>
   <div class="footer-brand">Jessica <span>Williams</span> for District 4</div>
@@ -1128,6 +1107,10 @@
 </footer>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  function handleSignup() {
+    alert('Thank you for signing up! You will hear from the campaign soon.');
+  }
+
   function setAmount(val) {
     document.getElementById('donateAmount').value = val;
     document.querySelectorAll('.donate-btn').forEach(b => b.classList.remove('active'));
