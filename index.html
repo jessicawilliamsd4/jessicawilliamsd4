@@ -312,7 +312,7 @@
 
   .section-label {
     font-family: 'Space Mono', monospace;
-    font-size: 0.65rem;
+    font-size: 0.9rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--gold);
@@ -581,87 +581,6 @@
     cursor: pointer;
   }
 
-  /* ---- DONATE ---- */
-  #donate {
-    background: var(--gold);
-    text-align: center;
-    padding: 80px 48px;
-  }
-
-  #donate .section-heading { color: var(--navy); }
-  #donate .section-label { color: var(--navy-mid); justify-content: center; }
-  #donate .section-label::before { background: var(--navy-mid); }
-
-  .donate-subtext {
-    font-size: 1.1rem;
-    color: rgba(15,34,64,0.7);
-    max-width: 540px;
-    margin: 0 auto 40px;
-    font-weight: 300;
-    line-height: 1.7;
-  }
-
-  .donate-amounts {
-    display: flex; justify-content: center; gap: 12px;
-    flex-wrap: wrap;
-    margin-bottom: 32px;
-  }
-
-  .donate-btn {
-    background: var(--navy);
-    color: var(--warm-white);
-    padding: 14px 28px;
-    font-family: 'Space Mono', monospace;
-    font-size: 0.82rem;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    border: none;
-    cursor: pointer;
-    transition: all 0.2s;
-    border-radius: 2px;
-  }
-
-  .donate-btn:hover, .donate-btn.active {
-    background: var(--navy-mid);
-    transform: translateY(-2px);
-  }
-
-  .donate-custom {
-    display: flex; justify-content: center; gap: 12px; align-items: center;
-    margin-bottom: 32px;
-  }
-
-  .donate-custom input {
-    padding: 12px 20px;
-    border: 2px solid var(--navy);
-    background: rgba(255,255,255,0.4);
-    font-family: 'DM Sans', sans-serif;
-    font-size: 1rem;
-    color: var(--navy);
-    outline: none;
-    width: 160px;
-    border-radius: 0;
-  }
-
-  .donate-submit {
-    background: var(--navy);
-    color: var(--warm-white);
-    padding: 14px 40px;
-    font-family: 'Space Mono', monospace;
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    border: none;
-    cursor: pointer;
-    transition: all 0.2s;
-    border-radius: 2px;
-  }
-
-  .donate-submit:hover {
-    background: var(--navy-mid);
-    transform: translateY(-2px);
-  }
 
   /* ---- CONTACT ---- */
   #contact { background: var(--navy); }
@@ -818,9 +737,7 @@
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#priorities">Priorities</a></li>
-    <li><a href="#endorse">Get Involved</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#signup" class="nav-cta">Stay in Touch</a></li>
   </ul>
 </nav>
 
@@ -838,7 +755,7 @@
     </p>
     <div class="hero-actions">
       <a href="#priorities" class="btn-primary">My Priorities</a>
-      <a href="#endorse" class="btn-outline">Get Involved</a>
+      <a href="#contact" class="btn-outline">Get in Touch</a>
     </div>
   </div>
 
@@ -971,63 +888,6 @@
   </div>
 </section>
 
-<!-- GET INVOLVED -->
-<section id="endorse">
-  <div class="section-inner">
-    <div class="section-label">Get Involved</div>
-    <h2 class="section-heading">Stand with <em>Jessica</em></h2>
-
-    <div class="volunteer-form">
-      <h3 style="font-family: 'DM Serif Display', serif; font-size: 1.6rem; color: var(--navy); margin-bottom: 8px;">Join the Campaign</h3>
-      <p style="color: var(--text-mid); margin-bottom: 32px; font-size: 0.95rem;">Sign up to endorse, volunteer, or host an event for Jessica.</p>
-
-      <div class="form-grid">
-        <div class="form-group">
-          <label>First Name</label>
-          <input type="text" placeholder="First name">
-        </div>
-        <div class="form-group">
-          <label>Last Name</label>
-          <input type="text" placeholder="Last name">
-        </div>
-        <div class="form-group">
-          <label>Email Address</label>
-          <input type="email" placeholder="you@email.com">
-        </div>
-        <div class="form-group">
-          <label>Neighborhood / Community</label>
-          <input type="text" placeholder="Stockbridge, McDonough, Hampton...">
-        </div>
-        <div class="form-group">
-          <label>School Cluster (if applicable)</label>
-          <select>
-            <option value="">Select a cluster</option>
-            <option>Dutchtown Cluster</option>
-            <option>Eagle's Landing Cluster</option>
-            <option>McDonough Cluster</option>
-            <option>Stockbridge Cluster</option>
-            <option>Union Grove Cluster</option>
-            <option>Woodland Cluster</option>
-            <option>Not sure / Other</option>
-          </select>
-        </div>
-      </div>
-
-      <p style="font-family: 'Space Mono', monospace; font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-mid); margin-bottom: 12px;">I want to:</p>
-      <div class="checkbox-group">
-        <label class="checkbox-item"><input type="checkbox"> Add my name as an endorser</label>
-        <label class="checkbox-item"><input type="checkbox"> Knock doors / canvass</label>
-        <label class="checkbox-item"><input type="checkbox"> Host a house party or event</label>
-        <label class="checkbox-item"><input type="checkbox"> Put up a yard sign</label>
-        <label class="checkbox-item"><input type="checkbox"> Help with social media</label>
-        <label class="checkbox-item"><input type="checkbox"> Phone banking</label>
-      </div>
-
-      <button class="btn-submit" onclick="alert('Thank you! The campaign team will be in touch soon.')">Submit</button>
-    </div>
-  </div>
-</section>
-
 
 <!-- CONTACT -->
 <section id="contact">
@@ -1043,7 +903,7 @@
           <div class="icon">✉️</div>
           <div class="detail-text">
             <strong>Email</strong>
-            <a href="mailto:drjessrw@gmail.com" style="color:rgba(255,255,255,0.7);text-decoration:none;">drjessrw@gmail.com</a>
+            <a href="/cdn-cgi/l/email-protection#8aeef8e0eff9f9f8fdcaede7ebe3e6a4e9e5e7" style="color:rgba(255,255,255,0.7);text-decoration:none;"><span class="__cf_email__" data-cfemail="0460766e6177777673446369656d682a676b69">[email&#160;protected]</span></a>
           </div>
         </div>
         <div class="contact-detail">
@@ -1053,76 +913,43 @@
             Henry County Schools, District 4, Georgia
           </div>
         </div>
-
-        <div style="margin-top: 40px;">
-          <p style="font-family: 'Space Mono', monospace; font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 16px;">Follow Jessica</p>
-          <div style="display: flex; gap: 12px;">
-            <a href="#" style="width:40px;height:40px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;color:white;text-decoration:none;font-size:1rem;transition:all 0.2s;" onmouseover="this.style.borderColor='#c8922a'" onmouseout="this.style.borderColor='rgba(255,255,255,0.12)'">f</a>
-            <a href="#" style="width:40px;height:40px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;color:white;text-decoration:none;font-size:1rem;transition:all 0.2s;" onmouseover="this.style.borderColor='#c8922a'" onmouseout="this.style.borderColor='rgba(255,255,255,0.12)'">in</a>
-            <a href="#" style="width:40px;height:40px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;color:white;text-decoration:none;font-size:1rem;transition:all 0.2s;" onmouseover="this.style.borderColor='#c8922a'" onmouseout="this.style.borderColor='rgba(255,255,255,0.12)'">📷</a>
-          </div>
-        </div>
       </div>
 
       <div class="contact-form">
-        <div style="display:flex;flex-direction:column;gap:16px;">
+        <form action="https://formspree.io/f/mpqyqowy" method="POST" style="display:flex;flex-direction:column;gap:16px;">
           <div class="form-group">
             <label>Your Name</label>
-            <input type="text" placeholder="Full name">
+            <input type="text" name="name" placeholder="Full name" required>
           </div>
           <div class="form-group">
             <label>Email</label>
-            <input type="email" placeholder="your@email.com">
+            <input type="email" name="email" placeholder="your@email.com" required>
           </div>
           <div class="form-group">
             <label>Message</label>
-            <textarea rows="5" placeholder="What's on your mind?"></textarea>
+            <textarea name="message" rows="5" placeholder="What's on your mind?" required></textarea>
           </div>
-          <button class="btn-submit" onclick="alert('Message sent! We\'ll be in touch soon.')">Send Message →</button>
-        </div>
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- EMAIL SIGNUP -->
-<section id="signup" style="background: var(--navy); padding: 80px 48px; text-align: center;">
-  <div class="section-inner" style="max-width: 600px;">
-    <div class="section-label" style="justify-content: center;">Stay Connected</div>
-    <h2 class="section-heading" style="color: var(--warm-white); margin-bottom: 12px;">Sign up to <em>stay in touch</em></h2>
-    <p style="color: rgba(255,255,255,0.6); font-size: 1rem; line-height: 1.7; margin-bottom: 40px; font-weight: 300;">Get updates from the campaign delivered straight to your inbox.</p>
-    <div style="display: flex; gap: 12px; max-width: 480px; margin: 0 auto; flex-wrap: wrap;">
-      <input type="text" placeholder="Your name" style="flex: 1; min-width: 140px; padding: 14px 18px; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15); color: white; font-family: 'DM Sans', sans-serif; font-size: 0.9rem; border-radius: 2px; outline: none;">
-      <input type="email" placeholder="Your email" style="flex: 2; min-width: 200px; padding: 14px 18px; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15); color: white; font-family: 'DM Sans', sans-serif; font-size: 0.9rem; border-radius: 2px; outline: none;">
-      <button onclick="handleSignup()" style="background: var(--gold); color: var(--navy); padding: 14px 28px; font-family: 'Space Mono', monospace; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; border: none; cursor: pointer; border-radius: 2px; white-space: nowrap;">Sign Up</button>
-    </div>
-    <p style="margin-top: 20px; font-family: 'Space Mono', monospace; font-size: 0.6rem; letter-spacing: 0.08em; color: rgba(255,255,255,0.3); text-transform: uppercase;">drjessrw@gmail.com</p>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
   <div class="footer-brand">Jessica <span>Williams</span> for District 4</div>
+  <div style="display: flex; gap: 12px; align-items: center;">
+    <a href="https://www.facebook.com/profile.php?id=61583744552378" target="_blank" style="width:36px;height:36px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.6);text-decoration:none;font-size:0.9rem;transition:all 0.2s;border-radius:2px;" onmouseover="this.style.borderColor='#c8922a';this.style.color='#c8922a'" onmouseout="this.style.borderColor='rgba(255,255,255,0.15)';this.style.color='rgba(255,255,255,0.6)'">f</a>
+    <a href="https://www.linkedin.com/in/jrwilliamsphd/" target="_blank" style="width:36px;height:36px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.6);text-decoration:none;font-size:0.9rem;transition:all 0.2s;border-radius:2px;" onmouseover="this.style.borderColor='#c8922a';this.style.color='#c8922a'" onmouseout="this.style.borderColor='rgba(255,255,255,0.15)';this.style.color='rgba(255,255,255,0.6)'">in</a>
+  </div>
   <p>Paid for by Jessica Williams for Henry County Schools District 4<br>JessicaWilliamsD4.com · Atlanta, Georgia</p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   function handleSignup() {
     alert('Thank you for signing up! You will hear from the campaign soon.');
   }
 
-  function setAmount(val) {
-    document.getElementById('donateAmount').value = val;
-    document.querySelectorAll('.donate-btn').forEach(b => b.classList.remove('active'));
-    event.target.classList.add('active');
-  }
 
-  // Smooth scroll nav highlight
-  const sections = document.querySelectorAll('section[id], div[id]');
-  window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY;
-    sections.forEach(section => {
-      const top = section.offsetTop - 100;
-      const bottom = top + section.offsetHeight;
-      const id = section.getAttribute('id');
-      const link = document.querySelector(`.nav-links a[href="#${id
+  const sections = documen
